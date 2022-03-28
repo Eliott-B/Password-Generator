@@ -5,5 +5,5 @@ This program generates a complex password and adds it to a .txt file to have a d
 You can find this script online if you need it : 
 https://replit.com/@Eliott-B/Password-Generator?v=1
 
-If you just want the generator without the file, replace lines 43 to 46 with : 
+If you just want the generator without the file, replace lines 49 to 52 with : 
 `print(Create_Password())`
