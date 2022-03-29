@@ -1,9 +1,9 @@
 """
-Created on Mon Mar 28 15:48:02 2022
-
 @author: Eliott-B
+@version: 1.1
+@github: https://github.com/Eliott-B/Password-Generator
 """
-from random import choice
+from secrets import choice
 
 def Create_Password()->str:
     """Créer un mot de passe composé de 16 caractères dont au moins un caracère spécial,
@@ -46,6 +46,6 @@ def Verify_Password(password:str)->bool:
 
 
 password = open("password.txt","a")
-nom = input("What's the web site ? ")
+nom = input("Quel est le nom du site ? ")
 password.write(nom + " : " + Create_Password()+"\n")
 password.close()
