@@ -1,6 +1,6 @@
 """
 @author: Eliott-B
-@version: 1.1
+@version: 1.2
 @github: https://github.com/Eliott-B/Password-Generator
 """
 from secrets import choice
@@ -45,7 +45,5 @@ def Verify_Password(password:str)->bool:
         return False
 
 
-password = open("password.txt","a")
-nom = input("Quel est le nom du site ? ")
-password.write(nom + " : " + Create_Password()+"\n")
-password.close()
+password = Create_Password()
+print(password)
